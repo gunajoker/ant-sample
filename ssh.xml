@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project basedir="C:\Users\Gvellingiri\Desktop\LearningNeverEnds\Ant\" default="target2message">
+<property name="message" value="folder created"></property>
+<property name="message2" value="justprintmsg"></property>
+
+<target name="target2message">
+
+<sshexec host="127.0.0.1"
+         username="remote_user"
+		 keyfile="C:\Users\Gvellingiri\.ssh\id_rsa"
+         password="1234"
+		 port="22"
+         command="cd $HOME;touch antcreatedfile"/>
+		 
+</target>
+
+</project>

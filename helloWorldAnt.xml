@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project default="oneMandatoryTargetisMentionedHEre">
+<target name="oneMandatoryTargetisMentionedHEre">
+<echo message="this is ant first program"> </echo>
+<mkdir dir="antCreatedFolder"> </mkdir>
+</target>
+</project>

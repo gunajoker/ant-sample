@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project basedir="C:\Users\Gvellingiri\Desktop\LearningNeverEnds\Ant\" default="target2message">
+<property name="message" value="folder created"></property>
+<property name="message2" value="justprintmsg"></property>
+
+<target name="target1folderCreate"  depends="javarun">
+<mkdir dir="antCreatedFolder"> </mkdir>
+<echo message="${message}"> </echo>
+</target>
+
+<target name="target2message" depends="target1folderCreate">
+<echo message="${message2}"> </echo>
+</target>
+
+<target name="javarun"  depends="javacompile" ><java classname="test" fork="true"/>
+
+</target>
+
+<target name="javacompile" >
+<javac srcdir="C:\Users\Gvellingiri\Desktop\LearningNeverEnds\Java\javaplayground\" includeantruntime="true" includes="test.java" destdir="."> </javac>
+</target>
+
+</project>
